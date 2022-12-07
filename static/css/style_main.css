@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+
+
+
+
+html, body {
+    
+    font-family: 'Lato', sans-serif;
+}
+
+
+body {
+    background-image: url("background.jpg");
+    background-position: center;
+    background-size: cover; 
+
+}   
+
+
+
+
+
+.container1{
+
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 5vh;
+
+}
+
+
+.container2 {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+
+* 
+{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+.container2 {
+    height: 90vh;
+}
+
+
+
+
+
+
+#city,  #overview, #poster, #youtube_vid{
+
+    display:flex;
+    justify-content:center;
+    
+
+}
+
+#city, #poster, #youtube_vid
+{
+    align-items: center;
+}
+
+
+#overview {
+    align-self: center;
+
+}
+
+
+
+
+
+
+
+
+#city,  #overview, #poster, #youtube_vid{
+    margin: 10px;
+    /*border: 5px solid white;*/
+    color: white;
+    text-align: center;
+    
+}
+
+#city{
+
+    font-size: 120px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+#overview{
+
+    font-size: 20px;
+    font-family: 'Source Sans Pro', sans-serif;
+    width:30%;
+    order:2;
+    text-align: left;
+    /*background-color: #C9E0DF;*/
+    border-radius:10px;
+}
+
+#poster{
+
+    width:450px;
+    border-radius: 10px;
+    transition: transform .2s;
+    order:1;
+}
+
+#poster:hover{
+    transform: scale(1.1);
+
+
+}
+
+
+
+#youtube_vid
+{
+
+    height:36.%;
+    transition: transform .2s;
+    order:3;
+    border-radius: 10px;
+
+}
+
+
+
+#youtube_vid:hover
+{
+
+    transform: scale(1.1);
+
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-device-width:1090px)
+
+{
+
+    .container1{
+        height: 10vh;
+    }
+
+    .container2 {
+        height: 100vh;
+    }
+
+    #poster
+    {
+
+        width:83%;
+        border-radius: 20px;
+    }
+    
+    #youtube_vid
+    {
+    
+        width:83%;
+        height:20%;
+        border-radius: 20px;
+    
+    }
+
+    #overview
+    {
+        width:900px;
+
+    }
+
+}
+
+@media only screen and (max-width:1090px)
+
+{
+
+    #poster
+    {
+
+        width:83%;
+        border-radius: 10px;
+    }
+    
+    #youtube_vid
+    {
+    
+        width:83%;
+        height:20%;
+    
+    }
+
+    #overview
+    {
+        width:900px;
+
+    }
+
+}

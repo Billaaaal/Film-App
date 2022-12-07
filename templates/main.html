@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon site web</title>
+    <link rel="stylesheet" href="{% static '/css/style_main.css' %}">
+</head>
+<body>
+    <div class="container1">
+        <h1 id="city">{{movie_title}}</h1>
+    </div>
+        <div class="container2">
+        <h1 id="overview">{{overview}}</h1>
+        <img id = "poster" src="{{poster_path}}" alt="{{movie_title}}"/>
+        <iframe id="youtube_vid"width="600" height="337.5" src="{{movie_trailer_youtube}}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+</body>
+</html>
